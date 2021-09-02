@@ -1,15 +1,19 @@
 <template>
 	<Header :npl="npl1"/>
-	<div v-if="show1">
-		<div class="presentacion">
-			<p>Bienvenido jugador, ¿cómo podemos dirigirnos a ti?</p>
-			<input v-model="nameplayer" placeholder="mi nombre es..." class="text1" v-bind:style="{
-			textAlign:'left', backgroundColor: 'white'}">
+	<div class="container">
+		<div v-if="show1">
+			<div class="container" style="width: 50%; margin-top: 70px;">
+				<p>Bienvenido jugador, ¿cómo podemos dirigirnos a ti?</p>
+				<div class="input-group mb-5">
+					<span class="input-group-text" id="inputGroup-sizing-default">Mi nombre es...</span>
+					<input v-model="nameplayer" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+				</div>
+				<button class="btn btn-primary" type="submit" @click="postPlayer()">Comenzar</button>
+			</div>
 		</div>
-		<button class="button1" @click="postPlayer()">Comenzar</button>
-	</div>
-	<div v-if="show2">
-		<Partida :idp="idplayer" :history="hist" :myimage="img"/>
+		<div v-if="show2">
+			<Partida :idp="idplayer" :history="hist" :myimage="img"/>
+		</div>
 	</div>
 </template>
 

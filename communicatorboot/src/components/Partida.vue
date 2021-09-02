@@ -22,20 +22,71 @@
 					<p class="stats">Sup. moral: 1000</p>
 			</div>
 		</div>-->
-
-<div class="card" style="width: 45rem;">
-  <img :src="getImgUrl(this.laimgdeaqui)" class="card-img-top" alt="laimgdeaqui">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">{{this.lahistdeaqui}}</p>
+<div class="container-fluid" style="margin-top: 50px;">
+	<div class="row">
+		<div class="col">
+			<div class="card" style="width: 45rem;">
+				<img :src="getImgUrl(this.laimgdeaqui)" class="card-img-top" alt="laimgdeaqui">
+				<div class="card-body">
+					<h5 class="card-title">Casa</h5>
+					<p class="card-text">{{this.lahistdeaqui}}</p>
+				</div>
+				<div class="container">
+					<button type="button" class="btn btn-outline-primary" @click="loadNewHistory()">Opcion1</button>
+					<button type="button" class="btn btn-outline-primary" @click="loadNewHistory2()">Opcion2</button>
+					<button type="button" class="btn btn-outline-primary" @click="loadNewHistory()">Opcion3</button>
+					<button type="button" class="btn btn-outline-primary" @click="loadNewHistory()">Opcion4</button>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+				<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Estadisticas
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+				<p><strong>vida:</strong> 100%</p>
+				<p><strong>hambre:</strong> 50</p>
+				<p><strong>sueño:</strong> 1000</p>
+				<p><strong>caca:</strong> 2</p>
+				<p><strong>Sup. moral:</strong> 1000</p>
+      </div>
+    </div>
   </div>
-	<div class="portabotones">
-		<button class="button4" @click="loadNewHistory()">Opcion1</button>
-		<button class="button4" @click="loadNewHistory2()">Opcion2</button>
-		<button class="button4">Opcion3</button>
-		<button class="button4">Opcion4</button>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Inventario
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Acciones
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+
+		</div>
 	</div>
 </div>
+
 </template>
 
 <script>
