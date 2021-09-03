@@ -2,13 +2,14 @@
 	<Header :npl="npl1"/>
 	<div class="container">
 		<div v-if="show1">
-			<div class="container" style="width: 50%; margin-top: 70px;">
-				<p>Bienvenido jugador, ¿cómo podemos dirigirnos a ti?</p>
-				<div class="input-group mb-5">
-					<span class="input-group-text" id="inputGroup-sizing-default">Mi nombre es...</span>
-					<input v-model="nameplayer" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			<div class="container" style="width: 50%; margin-top: 70px; border: 2px; border-color: black;
+			border-style: solid;
+			background-color: whitesmoke;">
+				<div class="mb-3">
+					<label for="exampleFormControlInput1" class="form-label">Bienvenido jugador, ¿cómo podemos dirigirnos a ti?</label>
+					<input v-model="nameplayer" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mi nombre es...">
 				</div>
-				<button class="btn btn-primary" type="submit" @click="postPlayer()">Comenzar</button>
+				<button class="btn btn-dark" type="submit" @click="postPlayer()" style="margin-top: 20px; margin-bottom: 30px;">Comenzar</button>
 			</div>
 		</div>
 		<div v-if="show2">
@@ -78,143 +79,12 @@ export default {
 </script>
 
 <style>
-	.presentacion{
-		margin-top: 300px;
-		margin-bottom: 40px;
-	}
-	.button1{
-		background-color: #008CBA;
-		border: none;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		margin-right: 150px;
-		margin-left: 150px;
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	.button2{
-		/*margin: 0;
-		position: absolute;
-		left: 45%;*/
-		background-color: transparent;
-		border: none;
-		color: aqua;
-		font-family: 'Roboto', sans-serif;
-		/*padding: 15px 32px;*/
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 25px;
-		font-weight:700;
-	}
-
-	.button3{
-		/*margin: 0;
-		position: absolute;
-		left: 45%;*/
-		background-color: transparent;
-		border: none;
-		color: grey;
-		font-family: 'Roboto', bold;
-		/*padding: 15px 32px;*/
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 25px;
-		font-weight:700;
-	}
-
-	.button4{
-		background-color: royalblue;
-		border: none;
-		color: yellowgreen;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		margin-right: 10px;
-		margin-left: 10px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
 
 	.text1{
 		margin-left: 150px;
 	}
 
 	@media screen and (max-width: 768px) {
-		.presentacion{
-			margin-top: 200px;
-			margin-bottom: 40px;
-		}
-		.botonazul{
-			
-		}
-		.button1{
-			background-color: #008CBA;
-			border: none;
-			color: white;
-			padding: 15px 32px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin-right: 150px;
-			margin-left: 10px;
-			margin-top: 0px;
-			margin-bottom: 0px;
-		}
-
-		.button2{
-			/*margin: 0;
-			position: absolute;
-			left: 30%;*/
-			background-color: transparent;
-			border: none;
-			color: aqua;
-			font-family: 'Roboto', bold;
-			/*padding: 15px 32px;*/
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 25px;
-		}
-
-		.button3{
-			/*margin: 0;
-			position: absolute;
-			left: 30%;*/
-			background-color: transparent;
-			border: none;
-			color: grey;
-			font-family: 'Roboto', bold;
-			/*padding: 15px 32px;*/
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 25px;
-		}
-
-		.button4{
-			background-color: royalblue;
-			border: none;
-			color: yellowgreen;
-			/*padding: 15px 32px;*/
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 10px;
-			margin-right: 10px;
-			margin-left: 10px;
-			margin-top: 10px;
-			margin-bottom: 10px;
-		}
 
 		.text1{
 			margin-left: 10px;
