@@ -1,9 +1,6 @@
 <template>
 	<Header/>
-	<div class="container" style="margin-top: 100px; margin-bottom: 100px; border: 2px;
-		border-color: black;
-		border-style: solid;
-		background-color: whitesmoke;">
+	<div class="container intro">
 		<figure class="text-end" style="margin-top:50px;">
 			<blockquote class="blockquote">
 				<p>Si la felicidad prevista no llega a materializarse, siempre está la posibilidad de echarle la culpa a una elección equivocada antes que a nuestra incapacidad para vivir a la altura de las oportunidades que se nos ofrecen.</p>
@@ -26,7 +23,9 @@
 	<div class="container" style="margin-top: 100px; margin-bottom: 50px; border: 2px;
 		border-color: black;
 		border-style: solid;
-		background-color: whitesmoke;">
+		background-color: whitesmoke;
+		padding: 35px;
+		text-align: justify;">
 		<p>Bienvenido a COMMUNICATOR, un juego inspirado en la vida cotidiana y basado en algunas de las doctrinas filosóficas que defienden la capacidad de libre elección del ser humano y el valor teleológico de sus decisiones.</p>
 		<p>El equipo humano detrás de la ideación y programación de esta tosca simulación vital está en profundo desacuerdo con dichas doctrinas en general y sus axiomas en particular. De hecho, las considera perniciosas para la vida, o cuanto menos, meros instrumentos adaptativos al servicio del poder para el control de las masas a lo largo de la historia.</p>
 		<p>En los últimos siglos de este mundo, cada vez más globalizado y coMMunicado, estas teorías aparentemente “buenas” para el ser humano han sido utilizadas, con total desvergüenza, para sustentar ideologías de lo más diversas, desde aquellas que se aferran agresivamente a la idea del individuo, hasta aquellas que intentan regular los sistemas colectivos más utópicos.</p>
@@ -68,8 +67,14 @@ export default {
 </script>
 
 <style>
+	.intro{
+		margin-top: 100px; margin-bottom: 100px; border: 2px;
+		border-color: black;
+		border-style: solid;
+		background-color: whitesmoke;
+	}
 	p{
-		
+
 		/*text-align: left;
 		text-align: justify;
 		text-justify: inter-word;
@@ -90,6 +95,16 @@ export default {
 	}
 
 	@media screen and (max-width: 768px) {
+		.intro{
+			margin-top: 100px; 
+			margin-bottom: 100px;
+			margin-right: 5px;
+			margin-left: 50px;
+			border: 2px;
+			border-color: black;
+			border-style: solid;
+			background-color: whitesmoke;
+		}
 		p{
 			text-align: left;
 			text-align: justify;

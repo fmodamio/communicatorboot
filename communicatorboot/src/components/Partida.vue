@@ -50,8 +50,8 @@
 					<p class="card-text">{{this.lahistdeaqui}}</p>
 				</div>
 				<div class="btn-group" role="group" aria-label="Basic mixed styles example">
-					<button type="button" class="btn btn-secondary" @click="loadNewHistory()">Opcion1</button>
-					<button type="button" class="btn btn-secondary" @click="loadNewHistory2()">Opcion2</button>
+					<button type="button" class="btn btn-secondary" @click="loadNewHistory2()">Opcion1</button>
+					<button type="button" class="btn btn-secondary" @click="loadNewHistory()">Opcion2</button>
 					<button type="button" class="btn btn-secondary" @click="loadNewHistory3()">Opcion3</button>
 					<button type="button" class="btn btn-secondary" @click="loadNewHistory4()">Opcion4</button>
 				</div>
@@ -115,6 +115,9 @@ export default {
 </script>
 
 <style>
+.accordion-button:not(.collapsed)::after {
+    color: red!important;
+}
 	.card{
 		max-width: 100%;
 

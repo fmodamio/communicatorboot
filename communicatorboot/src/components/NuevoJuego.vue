@@ -2,7 +2,7 @@
 	<Header :npl="npl1"/>
 	<div class="container">
 		<div v-if="show1">
-			<div class="container" style="width: 50%; margin-top: 70px; border: 2px; border-color: black;
+			<div class="container" style="width: 60%; margin-top: 100px; border: 2px; border-color: black;
 			border-style: solid;
 			background-color: whitesmoke;">
 				<div class="mb-3">
